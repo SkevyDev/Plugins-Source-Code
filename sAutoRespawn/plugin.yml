@@ -1,0 +1,5 @@
+name: sAutoRespawn
+main: me.skevydev.sautorespawn.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de Auto-Respawn
