@@ -1,0 +1,8 @@
+name: AsAddress
+main: me.skevydev.saddress.Main
+version: 1.0
+author: SkevyDev
+description: Plugin para ver o ip de um jogador
+
+commands:
+  ip:
