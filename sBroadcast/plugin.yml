@@ -1,0 +1,9 @@
+name: sBroadcast
+main: me.skevydev.sbroadcast.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de Broadcast
+
+commands:
+  broadcast:
+  bc:

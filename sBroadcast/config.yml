@@ -1,0 +1,19 @@
+# ___________                       ________               
+# /   _____/  | __ _______  _____.__.\______ \   _______  __
+# \_____  \|  |/ // __ \  \/ <   |  | |    |  \_/ __ \  \/ /
+# /        \    <\  ___/\   / \___  | |    `   \  ___/\   / 
+#/_______  /__|_ \\___  >\_/  / ____|/_______  /\___  >\_/  
+#        \/     \/    \/      \/             \/     \/      
+#
+#    Website: https://dev.bukkit.org/members/SkevyDev
+#
+#Here is the configurable prefix
+Prefix: '&c&lBROADCAST'
+#If you do not put any color in the sentence, it will perform the one that is here!
+DefaultColorMessage: '&f'
+#Permission to execute command
+Permission: 'sbroadcast.command.broadcast'
+#Message when executing only the command
+UseCommandMessage: '&fUse: /broadcast [message] or /bc [message]'
+#Error message when you do not have permission!
+PermissionMessageError: '&fYou do not have the permission: &csbroadcast.command.broadcast, &fto execute this command!'
