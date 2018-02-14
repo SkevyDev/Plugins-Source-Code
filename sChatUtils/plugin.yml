@@ -1,0 +1,8 @@
+name: sChatUtils
+main: me.skevydev.schatutils.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de Chat
+
+commands:
+  chat:
