@@ -1,0 +1,9 @@
+name: sPing
+main: me.skevydev.sping.Main
+version: 1.0
+author: SkevyDev
+description: Plugin para ver o Ping
+
+commands:
+  ping:
+  
