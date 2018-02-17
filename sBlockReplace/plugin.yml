@@ -1,0 +1,5 @@
+name: sBlockReplace
+main: me.skevydev.sblockreplace.Main
+version: 1.0
+author: SkevyDev
+description: Plugin que muda o bloco ao quebrar e Colocar
