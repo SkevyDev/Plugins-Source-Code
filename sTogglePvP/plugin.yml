@@ -1,0 +1,9 @@
+name: sTogglePvP
+main: me.skevydev.stogglepvp.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de Ativar e Desativar o PvP
+
+commands:
+  pvp:
+  
