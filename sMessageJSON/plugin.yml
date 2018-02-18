@@ -1,0 +1,8 @@
+name: sMessageJSON
+main: me.skevydev.smessagejson.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de mensagem em JSON
+
+commands:
+  modo:
