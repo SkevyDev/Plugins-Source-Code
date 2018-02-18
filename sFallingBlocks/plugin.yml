@@ -1,0 +1,9 @@
+name: sFallingBlocks
+main: me.skevydev.sfallingblocks.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de Blocos caindo
+
+commands:
+  fallingblock:
+  
