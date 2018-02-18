@@ -1,0 +1,9 @@
+name: sReport
+main: me.skevydev.sreport.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de Report
+
+commands:
+  report:
+  
