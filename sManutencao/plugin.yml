@@ -1,0 +1,9 @@
+name: sManutencao
+main: me.skevydev.smanutencao.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de Manutencao
+
+commands:
+  manutencao:
+  
