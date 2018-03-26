@@ -1,0 +1,10 @@
+name: sStaffChat
+main: me.skevydev.sstaffchat.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de chat staff
+
+commands:
+  staffchat:
+  sc:
+  scp:
