@@ -1,0 +1,9 @@
+name: sFirst
+main: me.skevydev.sfirst.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de First
+
+commands:
+  first:
+  definirfirst:
