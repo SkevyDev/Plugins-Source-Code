@@ -1,0 +1,8 @@
+name: sGodMode
+main: me.skevydev.sgodmode.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de modo god
+
+commands:
+  god:
