@@ -50,6 +50,16 @@ public class BoardManager {
 				case 8: obj.setDisplayName("§c§lSCOREBO§f§lA§c§lRD"); i++; break;
 				case 9: obj.setDisplayName("§c§lSCOREBOA§f§lR§c§lD"); i++; break;
 				case 10: obj.setDisplayName("§c§lSCOREBOAR§f§lD"); i++; break;
+				case 11: obj.setDisplayName("§c§lS"); i++; break;
+				case 12: obj.setDisplayName("§c§lSC"); i++; break;
+				case 13: obj.setDisplayName("§c§lSCO"); i++; break;
+				case 14: obj.setDisplayName("§c§lSCOR"); i++; break;
+				case 15: obj.setDisplayName("§c§lSCORE"); i++; break;
+				case 16: obj.setDisplayName("§c§lSCOREB"); i++; break;
+				case 17: obj.setDisplayName("§c§lSCOREBO"); i++; break;
+				case 18: obj.setDisplayName("§c§lSCOREBOA"); i++; break;
+				case 19: obj.setDisplayName("§c§lSCOREBOAR"); i++; break;
+				case 20: obj.setDisplayName("§c§lSCOREBOARD"); i++; break;
 				default: i = 1;
 				}
 				board.getTeam("horas").setSuffix("§f" + getHoras());
