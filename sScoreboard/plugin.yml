@@ -1,0 +1,8 @@
+name: Scoreboard
+main: me.skevydev.com.sscoreboard.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de Scoreboard
+
+commands:
+  score:
