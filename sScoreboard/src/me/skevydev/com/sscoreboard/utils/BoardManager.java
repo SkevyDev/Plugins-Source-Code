@@ -23,17 +23,22 @@ public class BoardManager {
 		obj.setDisplaySlot(DisplaySlot.SIDEBAR);
 		obj.setDisplayName("§c§lSCOREBOARD");
 		
-		obj.getScore(Bukkit.getOfflinePlayer("§c")).setScore(2);
-		obj.getScore(Bukkit.getOfflinePlayer("§f")).setScore(1);
+		obj.getScore(Bukkit.getOfflinePlayer("§c")).setScore(3);
+		obj.getScore(Bukkit.getOfflinePlayer("§f")).setScore(2);
+		obj.getScore(Bukkit.getOfflinePlayer("§e")).setScore(1);
 		
 		board.registerNewTeam("nick").addPlayer(Bukkit.getOfflinePlayer("§c"));
 		board.registerNewTeam("horas").addPlayer(Bukkit.getOfflinePlayer("§f"));
+		board.registerNewTeam("money").addPlayer(Bukkit.getOfflinePlayer("§e"));
 		
 		board.getTeam("nick").setPrefix("§cNick: ");
 		board.getTeam("nick").setSuffix("§f" + p.getName());
 		
 		board.getTeam("horas").setPrefix("§cHoras: ");
 		board.getTeam("horas").setSuffix("§f00:00:00");
+		
+		board.getTeam("money").setPrefix("§cMoney: ");
+		board.getTeam("money").setSuffix("§f" + getMoney(p));
 		
 		task = new BukkitRunnable() {
 			int i = 1;
@@ -63,6 +68,7 @@ public class BoardManager {
 				default: i = 1;
 				}
 				board.getTeam("horas").setSuffix("§f" + getHoras());
+				board.getTeam("money").setSuffix("§f" + getMoney(p));
 			}
 		}.runTaskTimer(Main.getPlugin(Main.class), 20, 20);
 		p.setScoreboard(board);
@@ -75,6 +81,11 @@ public class BoardManager {
 	String getHoras() {
 		Calendar cal = Calendar.getInstance();
 		return new SimpleDateFormat("HH:mm:ss").format(cal.getTime());
+	}
+	
+	@SuppressWarnings("deprecation")
+	String getMoney(Player p) {
+		return new DecimalFormat("#,##0.00").format(Main.getEconomy().getBalance(p.getName()));
 	}
 	
 	public void clear(Player p) {
