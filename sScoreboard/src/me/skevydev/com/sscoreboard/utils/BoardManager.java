@@ -15,6 +15,16 @@ import me.skevydev.com.sscoreboard.Main;
 
 public class BoardManager {
 
+	private static final NavigableMap<Long, String> suffixes = new TreeMap<> ();
+	static {
+	  suffixes.put(1_000L, "k");
+	  suffixes.put(1_000_000L, "kk");
+	  suffixes.put(1_000_000_000L, "kkk");
+	  suffixes.put(1_000_000_000_000L, "kkkk");
+	  suffixes.put(1_000_000_000_000_000L, "kkkkk");
+	  suffixes.put(1_000_000_000_000_000_000L, "kkkkkk");
+	}
+	
 	public static BukkitTask task = null;
 	
 	public void send(Player p) {
@@ -68,7 +78,7 @@ public class BoardManager {
 				default: i = 1;
 				}
 				board.getTeam("horas").setSuffix("§f" + getHoras());
-				board.getTeam("money").setSuffix("§f" + getMoney(p));
+				board.getTeam("money").setSuffix("§f" + format(getMoney(p)));
 			}
 		}.runTaskTimer(Main.getPlugin(Main.class), 20, 20);
 		p.setScoreboard(board);
@@ -84,8 +94,22 @@ public class BoardManager {
 	}
 	
 	@SuppressWarnings("deprecation")
-	String getMoney(Player p) {
-		return new DecimalFormat("#,##0.00").format(Main.getEconomy().getBalance(p.getName()));
+	Long getMoney(Player p) {
+		return (long) Main.getEconomy().getBalance(p.getName());
+	}
+	
+	public static String format(long value) {
+	  if (value == Long.MIN_VALUE) return format(Long.MIN_VALUE + 1);
+	  if (value < 0) return "-" + format(-value);
+	  if (value < 1000) return Long.toString(value);
+
+	  Entry<Long, String> e = suffixes.floorEntry(value);
+	  Long divideBy = e.getKey();
+	  String suffix = e.getValue();
+
+	  long truncated = value / (divideBy / 10);
+	  boolean hasDecimal = truncated < 100 && (truncated / 10d) != (truncated / 10);
+	  return hasDecimal ? (truncated / 10d) + suffix : (truncated / 10) + suffix;
 	}
 	
 	public void clear(Player p) {
