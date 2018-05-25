@@ -47,7 +47,7 @@ public class BoardManager {
 		board.getTeam("horas").setPrefix("§cHoras: ");
 		board.getTeam("horas").setSuffix("§f00:00:00");
 		
-		board.getTeam("money").setPrefix("§cMoney: ");
+		board.getTeam("money").setPrefix("§cMoney: $");
 		board.getTeam("money").setSuffix("§f" + format(getMoney(p)));
 		
 		task = new BukkitRunnable() {
