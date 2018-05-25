@@ -13,6 +13,11 @@ public class Main extends JavaPlugin {
 		return economy;
 	}
 	public void onEnable() {
+		if(!setupEconomy()) {
+			Bukkit.getConsoleSender().sendMessage("§cPara o funcionamento do §fsScoreboard §cé necessário do Vault!");
+			Bukkit.getPluginManager().disablePlugin(this);
+			return;
+		}
 		Bukkit.getConsoleSender().sendMessage("§aPlugin §fsScoreboard §ahabilitado com sucesso!");
 		setupCommands();
 		setupEvents();
