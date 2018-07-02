@@ -1,0 +1,8 @@
+name: sEffects
+main: me.skevydev.com.seffects.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de Efeitos
+
+commands:
+  effects:
