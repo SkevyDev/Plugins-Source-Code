@@ -1,0 +1,5 @@
+name: sAutoPickup
+main: me.skevydev.com.sautopickup.Main
+version: 1.0
+author: SkevyDev
+description: Ao quebrar blocos, será adicionado em seu inventário.
