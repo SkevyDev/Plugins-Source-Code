@@ -1,0 +1,9 @@
+name: Login
+main: me.skevydev.com.login.Main
+version: 1.0
+author: SkevyDev
+description: Plugin de Login via MySQL
+
+commands:
+  register:
+  login:
