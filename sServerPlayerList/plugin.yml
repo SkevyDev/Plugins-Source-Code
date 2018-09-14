@@ -1,5 +1,6 @@
 name: sServerPlayerList
 main: me.skevydev.com.sserverplayerlist
+depend: [ProtocolLib]
 version: 1.0
 author: SkevyDev
 description: Mostra mensagem em json ao passar o mouse em cima da contagem de players
