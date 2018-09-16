@@ -1,0 +1,9 @@
+name: sLoadSchematic
+main: me.skevydev.com.sloadschematic.Main
+depend: [WorldEdit]
+version: 1.0
+author: SkevyDev
+description: Plugin para carregar um schematic especifico
+
+commands:
+  loadschematic:
