@@ -1,0 +1,8 @@
+name: sAntiProxy
+main: me.skevydev.com.santiproxy.Main
+version: 1.0
+author: SkevyDev
+description: Plugin para bloquear entrada de players utilizando proxy
+
+commanads:
+  antiproxy:
