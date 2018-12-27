@@ -23,7 +23,6 @@ public class Main extends JavaPlugin {
 		Bukkit.getConsoleSender().sendMessage("§aPlugin §fsNickBlocker §ahabilitado com sucesso!");
 		Bukkit.getConsoleSender().sendMessage("§aDeveloper: §fSkevyDev");
 		Bukkit.getConsoleSender().sendMessage("");
-		Bukkit.getPluginManager().registerEvents(new PlayerPreLogin(), this);
 	}
 	
 	public static Main getInstance() {
