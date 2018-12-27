@@ -1,0 +1,9 @@
+CommandBlocker:
+  Commands:
+    - 'Example1'
+    - 'Example2'
+    - 'Example3'
+  Error-Message:
+    - '&c&lCOMMAND BLOCKER'
+    - '&7Você não tem permissão para executar este comando!'
+    - '&c*(Comando bloqueado)*'

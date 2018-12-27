@@ -1,0 +1,5 @@
+name: CommandBlocker
+main: me.skevydev.com.commandblocker.Main
+version: 1.0
+author: SkevyDev
+description: Bloqueador de Comandos
