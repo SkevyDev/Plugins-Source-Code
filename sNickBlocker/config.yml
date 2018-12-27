@@ -1,0 +1,9 @@
+NickBlocker:
+  Nicks:
+    - 'Example1'
+    - 'Example2'
+    - 'Example3'
+  Kick-Message:
+    - '&c&lNICK BLOCKER'
+    - '&7Você está proibido de entrar no servidor!'
+    - '&cNick inadequado.'
